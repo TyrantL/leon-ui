@@ -23,9 +23,7 @@ module.exports = {
     'no-plusplus': 'off',
     'func-names': 'off',
   },
-  globals: {
-    dsBridge: true,
-  },
+  globals: {},
   overrides: [
     {
       files: [

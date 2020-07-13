@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <Button />
+    <Button @click="handleClick">default</Button>
+    <Button type="primary">primary</Button>
+    <Button disabled type="dashed">dashed</Button>
+    <Button type="danger">danger</Button>
   </div>
 </template>
 
@@ -11,6 +14,11 @@ export default {
   name: 'App',
   components: {
     Button,
+  },
+  methods: {
+    handleClick() {
+      console.log(1);
+    },
   },
 };
 </script>
@@ -23,5 +31,11 @@ body {
   color: #2c3e50;
   margin: 0;
   padding: 0;
+}
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 }
 </style>
