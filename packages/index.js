@@ -1,6 +1,6 @@
 import Button from './button';
 
-const version = '0.1.13';
+const version = '0.1.17';
 const components = [Button];
 const install = Vue => {
   components.forEach(Component => {
