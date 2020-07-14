@@ -1,6 +1,6 @@
 {
   "name": "leon-ui",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": false,
   "main": "lib/leon-ui.umd.min.js",
   "scripts": {
