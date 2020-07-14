@@ -22,6 +22,8 @@ module.exports = {
     'no-unused-expressions':  ['error', { 'allowTernary': true, 'allowShortCircuit': true }],
     'no-plusplus': 'off',
     'func-names': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'array-callback-return': 'off'
   },
   globals: {},
   overrides: [

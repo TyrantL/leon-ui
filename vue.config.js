@@ -20,14 +20,6 @@ module.exports = {
       libraryExport: 'default'
     }
   },
-  pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'less',
-      patterns: [
-        path.resolve(__dirname, './packages/common/style/common.less')
-      ]
-    }
-  },
   chainWebpack: config => {
     config.externals({
       // 'vue': 'Vue' // 不把vue的源码打包

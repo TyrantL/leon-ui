@@ -1,46 +1,9 @@
-<template>
-  <button
-    class="leon-button"
-    :class="`leon-button--${type} ${disabled ? 'leon-button-disabled' : ''}`"
-    :disabled="disabled"
-    @click="handleClick"
-  >
-    <slot></slot>
-  </button>
-</template>
-
-<script>
-export default {
-  name: 'Button',
-  props: {
-    type: {
-      type: String,
-      default: 'default', // default 、primary 、danger 、dashed
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  data() {
-    return {};
-  },
-  methods: {
-    handleClick() {
-      this.$emit('click');
-    },
-  },
-};
-</script>
-
-<style scoped lang="less">
 .leon-button {
-  .font;
-  .center;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 12px;
   height: 32px;
   border: 1px solid #d9d9d9;
@@ -91,4 +54,3 @@ export default {
     border-color: #d9d9d9;
   }
 }
-</style>

@@ -1,23 +1,21 @@
-/**
- * @author: leon
- * @date: 2020/7/13 2:24 下午
- */
-import Button from './Button/Button.vue';
+import Button from './button';
 
+const version = '0.1.13';
 const components = [Button];
-
 const install = Vue => {
   components.forEach(Component => {
-    Vue.install(Component);
+    Vue.use(Component);
   });
 };
-
 /* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export { Button };
 
-export default { install };
+export default {
+  install,
+  version,
+  Button,
+};
